@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ChevronRightIcon from '$lib/assets/logos/chevron-right-icon.svelte';
+	import ChevronRight from 'lucide-svelte/icons/chevron-right';
 
 	export let Title: boolean = false;
 	export let Description: boolean = false;
@@ -48,7 +48,7 @@
 		class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500"
 	>
 		<slot />
-		<ChevronRightIcon />
+		<ChevronRight />
 	</div>
 {:else if Eyebrow}
 	<svelte:element

@@ -1,16 +1,12 @@
 <script lang="ts">
-	import profile from '$lib/assets/images/profile.webp';
+	import profile from '$lib/assets/profile.webp';
 	import { page } from '$app/state';
 	import LanguageToggle from '$lib/components/LanguageToggle.svelte';
 	import { cn } from '$lib/utils';
 	import type { NavItem } from '$lib/types';
 	import { i18n } from '$lib/i18n';
 
-	let {
-		navItems,
-		isHomePage,
-		...restProps
-	}: { navItems: NavItem[]; isHomePage: boolean; [x: string]: unknown } = $props();
+	let { navItems, ...restProps }: { navItems: NavItem[]; [x: string]: unknown } = $props();
 </script>
 
 <div {...restProps}>
@@ -19,22 +15,16 @@
 			<div class="mx-auto max-w-4xl lg:max-w-5xl">
 				<div class="relative flex justify-between">
 					<div
-						class={cn(
-							'h-12 w-12 rounded-full p-0.5',
-							!isHomePage &&
-								'bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10'
-						)}
+						class="h-12 w-12 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"
 					>
-						{#if !isHomePage}
-							<a href="/" aria-label="Home" class="pointer-events-auto">
-								<img
-									src={profile}
-									alt=""
-									sizes="2.25rem"
-									class="h-11 w-11 rounded-full bg-zinc-100 object-cover dark:bg-zinc-800"
-								/>
-							</a>
-						{/if}
+						<a href="/" aria-label="Home" class="pointer-events-auto">
+							<img
+								src={profile}
+								alt=""
+								sizes="2.25rem"
+								class="h-11 w-11 rounded-full bg-zinc-100 object-cover dark:bg-zinc-800"
+							/>
+						</a>
 					</div>
 					<div class="pointer-events-auto">
 						<nav>

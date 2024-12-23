@@ -1,10 +1,10 @@
-import chalmers from '$lib/assets/images/chalmers.webp';
-import hello_watt from '$lib/assets/images/hello-watt.png';
-import irt_systemx from '$lib/assets/images/irt-systemx.png';
-import isep from '$lib/assets/images/isep.webp';
-import lvc from '$lib/assets/images/lvc.webp';
-import mnhn from '$lib/assets/images/mnhn.png';
-import partoo from '$lib/assets/images/partoo.png';
+import chalmers from '$lib/assets/chalmers.webp';
+import hello_watt from '$lib/assets/hello-watt.png';
+import irt_systemx from '$lib/assets/irt-systemx.png';
+import isep from '$lib/assets/isep.webp';
+import lvc from '$lib/assets/lvc.webp';
+import mnhn from '$lib/assets/mnhn.png';
+import partoo from '$lib/assets/partoo.png';
 
 export const resume = {
 	languages: {

@@ -1,12 +1,12 @@
 <script lang="ts">
 	import Button from '$lib/components/Button.svelte';
-	import BriefcaseIcon from '$lib/assets/logos/briefcase-icon.svelte';
-	import type { Component } from 'svelte';
+	import Briefcase from 'lucide-svelte/icons/briefcase';
+	import { type Icon as IconType } from 'lucide-svelte';
 
 	interface Role {
 		company: string;
 		title: string;
-		logo: Component;
+		logo: typeof IconType;
 		start: string;
 		end: string;
 	}
@@ -16,28 +16,28 @@
 		{
 			company: 'Planetaria',
 			title: 'CEO',
-			logo: BriefcaseIcon, // Replace with the actual path to your logo file
+			logo: Briefcase, // Replace with the actual path to your logo file
 			start: '2019',
 			end: 'Present'
 		},
 		{
 			company: 'Airbnb',
 			title: 'Product Designer',
-			logo: BriefcaseIcon, // Replace with the actual path to your logo file
+			logo: Briefcase, // Replace with the actual path to your logo file
 			start: '2014',
 			end: '2019'
 		},
 		{
 			company: 'Facebook',
 			title: 'iOS Software Engineer',
-			logo: BriefcaseIcon, // Replace with the actual path to your logo file
+			logo: Briefcase, // Replace with the actual path to your logo file
 			start: '2011',
 			end: '2014'
 		},
 		{
 			company: 'Starbucks',
 			title: 'Shift Supervisor',
-			logo: BriefcaseIcon, // Replace with the actual path to your logo file
+			logo: Briefcase, // Replace with the actual path to your logo file
 			start: '2008',
 			end: '2011'
 		}
@@ -46,7 +46,7 @@
 
 <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
 	<h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-		<BriefcaseIcon />
+		<Briefcase />
 		<span class="ml-3">Work</span>
 	</h2>
 	<ol class="mt-6 space-y-4">

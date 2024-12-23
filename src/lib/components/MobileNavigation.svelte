@@ -1,5 +1,5 @@
 <script lang="ts">
-	import profile from '$lib/assets/images/profile.webp';
+	import profile from '$lib/assets/profile.webp';
 	import LanguageToggle from '$lib/components/LanguageToggle.svelte';
 	import * as Popover from '$lib/components/ui/popover';
 	import type { NavItem } from '$lib/types';
@@ -40,9 +40,7 @@
 													<a
 														class="block px-4 py-4"
 														href={navItem.href}
-														onclick={() => {
-															open = false;
-														}}
+														onclick={() => (open = false)}
 													>
 														<b>{navItem.text}</b>
 													</a>

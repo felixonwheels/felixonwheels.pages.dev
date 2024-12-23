@@ -2,39 +2,39 @@
 	import Card from '$lib/components/Card.svelte';
 	import SimpleLayout from '$lib/components/SimpleLayout.svelte';
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
-	import BriefcaseIcon from '$lib/assets/logos/briefcase-icon.svelte';
+	import Briefcase from 'lucide-svelte/icons/briefcase';
 
 	const projects = [
 		{
 			name: 'Planetaria',
 			description: 'Creating technology to empower civilians to explore space on their own terms.',
 			link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-			logo: BriefcaseIcon
+			logo: Briefcase
 		},
 		{
 			name: 'Animaginary',
 			description: 'High performance web animation library, hand-written in optimized WASM.',
 			link: { href: '#', label: 'github.com' },
-			logo: BriefcaseIcon
+			logo: Briefcase
 		},
 		{
 			name: 'HelioStream',
 			description: 'Real-time video streaming library, optimized for interstellar transmission.',
 			link: { href: '#', label: 'github.com' },
-			logo: BriefcaseIcon
+			logo: Briefcase
 		},
 		{
 			name: 'cosmOS',
 			description: 'The operating system that powers our Planetaria space shuttles.',
 			link: { href: '#', label: 'github.com' },
-			logo: BriefcaseIcon
+			logo: Briefcase
 		},
 		{
 			name: 'OpenShuttle',
 			description:
 				'The schematics for the first rocket I designed that successfully made it to orbit.',
 			link: { href: '#', label: 'github.com' },
-			logo: BriefcaseIcon
+			logo: Briefcase
 		}
 	];
 </script>

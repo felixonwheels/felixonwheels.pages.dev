@@ -6,10 +6,8 @@
 	import * as m from '$lib/paraglide/messages.js';
 	import type { NavItem } from '$lib/types';
 
-	let isHomePage = $derived(i18n.route(page.url.pathname) === '/');
-
 	const navItems: NavItem[] = $state([
-		{ href: '/about', text: m.about() },
+		{ href: '/', text: m.about() },
 		{ href: '/projects', text: m.projects() },
 		{ href: '/resume', text: m.resume() },
 		{ href: '/uses', text: 'Uses' }
@@ -17,4 +15,4 @@
 </script>
 
 <MobileNavigation {navItems} class="md:hidden" />
-<DesktopNavigation {navItems} {isHomePage} class="hidden md:block" />
+<DesktopNavigation {navItems} class="hidden md:block" />

@@ -1,8 +1,9 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"about": "About",
-	"resume": "Resume",
 	"projects": "Projects",
+	"resume": "Resume",
+	"language": "Français",
 
 	"education": "Education",
 	"work": "Work experience",
