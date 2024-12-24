@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitest/config';
 import { imagetools } from 'vite-imagetools';
+import mkcert from 'vite-plugin-mkcert';
 import { paraglide } from '@inlang/paraglide-sveltekit/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 
@@ -10,7 +11,8 @@ export default defineConfig({
 			project: './project.inlang',
 			outdir: './src/lib/paraglide'
 		}),
-		imagetools()
+		imagetools(),
+		mkcert()
 	],
 
 	test: {

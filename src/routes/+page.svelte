@@ -161,11 +161,9 @@
 			</div>
 		</Container>
 	</Container>
-</BlurFade>
 
-<Container classStr="mt-8">
-	<div class="max-w-2xl">
-		<BlurFade once={true}>
+	<Container classStr="mt-8">
+		<div class="max-w-2xl">
 			<a href="/" aria-label="Home" class="pointer-events-auto mb-4 block h-16 w-16 origin-left">
 				<img
 					src={profile}
@@ -174,23 +172,17 @@
 					class="h-16 w-16 rounded-full bg-zinc-100 object-cover dark:bg-zinc-800"
 				/>
 			</a>
-		</BlurFade>
-		<BlurFade delay={0.12 * 1} once={true}>
 			<h1
 				class="mt-4 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100"
 			>
 				{m.homeTitle()}
 			</h1>
-		</BlurFade>
-		<BlurFade delay={0.12 * 2} once={true}>
 			<p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
 				I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder
 				and CEO of Planetaria, where we develop technologies that empower regular people to explore
 				space on their own terms.
 			</p>
-		</BlurFade>
 
-		<BlurFade delay={0.12 * 3} once={true}>
 			<article class="prose prose-base prose-slate lg:prose-lg dark:prose-invert">
 				<h4>hello world!</h4>
 
@@ -297,6 +289,6 @@
 					</footer>
 				</blockquote>
 			</article>
-		</BlurFade>
-	</div>
-</Container>
+		</div>
+	</Container>
+</BlurFade>
