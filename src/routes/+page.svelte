@@ -164,7 +164,7 @@
 
 	<Container classStr="mt-8">
 		<div class="max-w-2xl">
-			<a href="/" aria-label="Home" class="pointer-events-auto mb-4 block h-16 w-16 origin-left">
+			<a href="/" aria-label="Home" class="mb-4 block h-16 w-16 origin-left">
 				<img
 					src={profile}
 					alt=""

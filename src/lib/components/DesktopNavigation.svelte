@@ -17,7 +17,7 @@
 					<div
 						class="h-12 w-12 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"
 					>
-						<a href="/" aria-label="Home" class="pointer-events-auto">
+						<a href="/" aria-label="Home">
 							<img
 								src={profile}
 								alt=""
@@ -26,7 +26,7 @@
 							/>
 						</a>
 					</div>
-					<div class="pointer-events-auto">
+					<div>
 						<nav>
 							<ul
 								class="text-sm-custom flex rounded-full bg-white/90 px-3 font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
@@ -55,7 +55,7 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="pointer-events-auto">
+					<div>
 						<LanguageToggle />
 					</div>
 				</div>
