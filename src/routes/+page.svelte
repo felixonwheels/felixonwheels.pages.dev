@@ -2,7 +2,7 @@
 	import profile from '$lib/assets/profile.webp';
 	import Container from '$lib/components/Container.svelte';
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
-	import Button from '$lib/components/Button.svelte';
+	import { Button } from '$lib/components/ui/button/index.js';
 	import BlurFade from '$lib/components/BlurFade.svelte';
 	import Mail from 'lucide-svelte/icons/mail';
 	import Resume from '$lib/components/Resume.svelte';
@@ -153,7 +153,7 @@
 								required
 								class="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.125] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
 							/>
-							<Button classStr="ml-4 flex-none">Join</Button>
+							<Button class="ml-4 flex-none">Join</Button>
 						</div>
 					</form>
 					<Resume />

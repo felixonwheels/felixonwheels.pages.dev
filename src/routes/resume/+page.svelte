@@ -26,7 +26,7 @@
 	<div class="space-y-20">
 		<Speaking SpeakingSection title="Conferences">
 			<Speaking
-				Appearance
+				Appearance={true}
 				href="#"
 				title="In space, no one can watch you stream — until now"
 				description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
@@ -69,10 +69,42 @@
 			/>
 		</Speaking>
 
-		<section>
-			<h1>{m.work()}</h1>
-			<br />
+		<Speaking SpeakingSection title={m.work()}>
+			{#each resume.languages[languageTag()].work as work}
+				<Speaking
+					Appearance
+					href="#"
+					title={work.title}
+					description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
+					event={`${work.name} ${work.nameExplanation !== null ? `(${work.nameExplanation})` : ''}`}
+					cta="Watch video"
+				/>
+				<!-- <article>
+					<hgroup>
+						<h4>{work.name} {work.nameExplanation !== null ? `(${work.nameExplanation})` : ''}</h4>
+						<br />
+						<h5><mark>{work.title}</mark></h5>
+						<br />
+						<small><kbd>{work.date}</kbd></small>
+						<br />
+						<img src={work.logo} alt={work.name} class="w-48 object-contain" />
+					</hgroup>
 
+					{#if work.description?.length}
+						<details>
+							<summary><ListCollapse /></summary>
+							<blockquote>
+								{#each work.description as item}
+									<small><b>{item.title}</b> <Dot /> {item.text}</small><br />
+								{/each}
+							</blockquote>
+						</details>
+					{/if}
+				</article> -->
+			{/each}
+		</Speaking>
+
+		<section>
 			{#each resume.languages[languageTag()].work as work}
 				<article>
 					<hgroup>

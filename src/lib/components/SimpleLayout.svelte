@@ -1,8 +1,16 @@
 <script lang="ts">
-	import Container from './Container.svelte';
+	import Container from '$lib/components/Container.svelte';
+	import type { Snippet } from 'svelte';
 
-	export let title: string;
-	export let intro: string;
+	let {
+		title,
+		intro,
+		children
+	}: {
+		title: string;
+		intro: string;
+		children?: Snippet<[]>;
+	} = $props();
 </script>
 
 <Container classStr="mt-16 sm:mt-32">
@@ -14,5 +22,5 @@
 			{intro}
 		</p>
 	</header>
-	<div class="mt-16 sm:mt-20"><slot /></div>
+	<div class="mt-16 sm:mt-20">{@render children?.()}</div>
 </Container>

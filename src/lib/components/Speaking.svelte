@@ -1,16 +1,30 @@
 <script lang="ts">
-	import Card from './Card.svelte';
+	import Card from '$lib/components/Card.svelte';
+	import type { Snippet } from 'svelte';
 
-	export let Section: boolean = false;
-	export let Tools: boolean = false;
-	export let Appearance: boolean = false;
-	export let SpeakingSection: boolean = false;
-
-	export let href = '';
-	export let title = '';
-	export let event = '';
-	export let description = '';
-	export let cta = '';
+	let {
+		Section = false,
+		Tools = false,
+		Appearance = false,
+		SpeakingSection = false,
+		href,
+		title,
+		event,
+		description,
+		cta,
+		children
+	}: {
+		Section?: boolean;
+		Tools?: boolean;
+		Appearance?: boolean;
+		SpeakingSection?: boolean;
+		href?: string;
+		title?: string;
+		event: string;
+		description?: string;
+		cta?: string;
+		children?: Snippet<[]>;
+	} = $props();
 </script>
 
 {#if Section || SpeakingSection}
@@ -21,13 +35,13 @@
 			</h2>
 			<div class="md:col-span-3">
 				{#if SpeakingSection}
-					<div class="space-y-16"><slot /></div>
+					<div class="space-y-16">{@render children?.()}</div>
 				{:else if Tools}
 					<ul role="list" class="space-y-16">
-						<slot />
+						{@render children?.()}
 					</ul>
 				{:else}
-					<slot />
+					{@render children?.()}
 				{/if}
 			</div>
 		</div>

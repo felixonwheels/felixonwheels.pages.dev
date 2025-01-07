@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Button from '$lib/components/Button.svelte';
+	import { Button } from '$lib/components/ui/button/index.js';
 	import Briefcase from 'lucide-svelte/icons/briefcase';
 	import { type Icon as IconType } from 'lucide-svelte';
 
@@ -83,5 +83,5 @@
 			</li>
 		{/each}
 	</ol>
-	<Button href="#" variant="secondary" classStr="group mt-6 w-full">Download CV</Button>
+	<Button href="#" variant="secondary" class="group mt-6 w-full">Download CV</Button>
 </div>
