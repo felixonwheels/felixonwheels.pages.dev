@@ -3,6 +3,7 @@ import { imagetools } from 'vite-imagetools';
 import mkcert from 'vite-plugin-mkcert';
 import { paraglide } from '@inlang/paraglide-sveltekit/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
 	plugins: [
@@ -12,7 +13,8 @@ export default defineConfig({
 			outdir: './src/lib/paraglide'
 		}),
 		imagetools(),
-		mkcert()
+		mkcert(),
+		tailwindcss(),
 	],
 
 	test: {

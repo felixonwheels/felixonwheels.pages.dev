@@ -15,7 +15,7 @@
 			<div class="mx-auto max-w-4xl lg:max-w-5xl">
 				<div class="relative flex justify-between">
 					<div
-						class="h-12 w-12 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"
+						class="h-12 w-12 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10"
 					>
 						<a href="/" aria-label="Home">
 							<img
@@ -29,7 +29,7 @@
 					<div>
 						<nav>
 							<ul
-								class="text-sm-custom flex rounded-full bg-white/90 px-3 font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+								class="text-sm-custom flex rounded-full bg-white/90 px-3 font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
 							>
 								{#each navItems as navItem}
 									<li>
@@ -46,7 +46,7 @@
 											{navItem.text}
 											{#if i18n.route(page.url.pathname) === navItem.href}
 												<span
-													class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"
+													class="absolute inset-x-1 -bottom-px h-px bg-linear-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"
 												></span>
 											{/if}
 										</a>
