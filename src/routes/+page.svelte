@@ -1,13 +1,12 @@
 <script lang="ts">
 	import profile from '$lib/assets/profile.webp';
+	import BlurFade from '$lib/components/BlurFade.svelte';
 	import Container from '$lib/components/Container.svelte';
+	import Resume from '$lib/components/Resume.svelte';
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
-	import BlurFade from '$lib/components/BlurFade.svelte';
+	import { m } from '$lib/paraglide/messages.js';
 	import Mail from 'lucide-svelte/icons/mail';
-	import Resume from '$lib/components/Resume.svelte';
-
-	import * as m from '$lib/paraglide/messages.js';
 </script>
 
 <svelte:head>
@@ -72,7 +71,7 @@
 					<li class="flex">
 						<a
 							class="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
-							href="/about#"
+							href="/#"
 						>
 							<SocialIcons
 								Twitter
@@ -84,7 +83,7 @@
 					<li class="mt-4 flex">
 						<a
 							class="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
-							href="/about#"
+							href="/#"
 						>
 							<SocialIcons
 								Instagram
@@ -96,7 +95,7 @@
 					<li class="mt-4 flex">
 						<a
 							class="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
-							href="/about#"
+							href="/#"
 						>
 							<SocialIcons
 								GitHub
@@ -108,7 +107,7 @@
 					<li class="mt-4 flex">
 						<a
 							class="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
-							href="/about#"
+							href="/#"
 							><SocialIcons
 								LinkedIn
 								class="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500"
@@ -151,7 +150,7 @@
 								placeholder="Email address"
 								aria-label="Email address"
 								required
-								class="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-hidden focus:ring-4 focus:ring-teal-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.125] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
+								class="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 focus:outline-hidden sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.125] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
 							/>
 							<Button class="ml-4 flex-none">Join</Button>
 						</div>

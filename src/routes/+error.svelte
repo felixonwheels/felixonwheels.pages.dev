@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import Container from '$lib/components/Container.svelte';
 	import { onMount } from 'svelte';
+
 	import Layout from './+layout.svelte';
 
 	onMount(() => {

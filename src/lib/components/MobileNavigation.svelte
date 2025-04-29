@@ -2,8 +2,9 @@
 	import profile from '$lib/assets/profile.webp';
 	import LanguageToggle from '$lib/components/LanguageToggle.svelte';
 	import * as Popover from '$lib/components/ui/popover';
-	import ChevronDown from 'lucide-svelte/icons/chevron-down';
+	import { localizeHref } from '$lib/paraglide/runtime';
 	import type { NavItem } from '$lib/types';
+	import ChevronDown from 'lucide-svelte/icons/chevron-down';
 
 	let open = $state(false);
 
@@ -23,7 +24,7 @@
 						<div class="flex items-center gap-6">
 							<div>
 								<Popover.Trigger
-									class="rounded-full bg-white/90 px-4 py-2 font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5  dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+									class="cursor-pointer rounded-full bg-white/90 px-4 py-2 font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5  dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
 									type="button"
 								>
 									<div class="flex items-center space-x-1">
@@ -33,7 +34,7 @@
 								</Popover.Trigger>
 
 								<Popover.Content
-									class="mr-2 mt-2 rounded-xl p-4 text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5  dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10"
+									class="mt-2 mr-2 rounded-xl p-4 text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5  dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10"
 									onCloseAutoFocus={(e) => e.preventDefault()}
 								>
 									<nav class="m-4">
@@ -42,7 +43,7 @@
 												<li>
 													<a
 														class="block px-4 py-4"
-														href={navItem.href}
+														href={localizeHref(navItem.href)}
 														onclick={() => (open = false)}
 													>
 														<b>{navItem.text}</b>
@@ -54,7 +55,7 @@
 								</Popover.Content>
 							</div>
 							<div
-								class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10"
+								class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10"
 							>
 								<a href="/" aria-label="Home">
 									<img

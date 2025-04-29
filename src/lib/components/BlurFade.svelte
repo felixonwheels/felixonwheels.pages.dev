@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { Motion, AnimatePresence, useAnimation } from 'svelte-motion';
-	import { inview } from 'svelte-inview';
 	import { cn } from '$lib/utils';
+	import { inview } from 'svelte-inview';
+	import { AnimatePresence, Motion, useAnimation } from 'svelte-motion';
+
 	export let duration = 0.4;
 	export let delay = 0;
 	export let yOffset = 6;

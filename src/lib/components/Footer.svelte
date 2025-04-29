@@ -1,15 +1,17 @@
 <script lang="ts">
-	import Container from '$lib/components/Container.svelte';
-	import * as m from '$lib/paraglide/messages.js';
 	import BlurFade from '$lib/components/BlurFade.svelte';
+	import Container from '$lib/components/Container.svelte';
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
 	import { Separator } from '$lib/components/ui/separator/index.js';
-
+	import { m } from '$lib/paraglide/messages.js';
+	import type { NavItem } from '$lib/types';
 	import CodeXml from 'lucide-svelte/icons/code-xml';
 	import Heart from 'lucide-svelte/icons/heart';
+
+	let { navItems }: { navItems: NavItem[] } = $props();
 </script>
 
-<footer class="mb-24 mt-24 pt-4 md:mb-6">
+<footer class="mt-24 mb-24 pt-4 md:mb-6">
 	<BlurFade once={true}>
 		<div>
 			<Separator
@@ -18,14 +20,11 @@
 		</div>
 		<div class="flex flex-col items-center justify-between gap-6">
 			<div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-				<a class="transition hover:text-teal-500 dark:hover:text-teal-400" href="/about">About</a>
-				<a class="transition hover:text-teal-500 dark:hover:text-teal-400" href="/projects"
-					>Projects</a
-				>
-				<a class="transition hover:text-teal-500 dark:hover:text-teal-400" href="/speaking"
-					>Speaking</a
-				>
-				<a class="transition hover:text-teal-500 dark:hover:text-teal-400" href="/uses">Uses</a>
+				{#each navItems as navItem}
+					<a class="transition hover:text-teal-500 dark:hover:text-teal-400" href={navItem.href}
+						>{navItem.text}</a
+					>
+				{/each}
 			</div>
 
 			<div class="flex gap-6">

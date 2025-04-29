@@ -20,7 +20,7 @@
 		SpeakingSection?: boolean;
 		href?: string;
 		title?: string;
-		event: string;
+		event?: string;
 		description?: string;
 		cta?: string;
 		children?: Snippet<[]>;

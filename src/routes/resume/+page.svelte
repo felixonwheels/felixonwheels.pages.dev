@@ -1,14 +1,12 @@
 <script lang="ts">
+	import { resume } from '$content/resume';
 	import SimpleLayout from '$lib/components/SimpleLayout.svelte';
 	import Speaking from '$lib/components/Speaking.svelte';
-
-	import * as m from '$lib/paraglide/messages.js';
-	import { languageTag } from '$lib/paraglide/runtime.js';
-	import { resume } from '$content/resume';
-
-	import MoveRight from 'lucide-svelte/icons/move-right';
+	import { m } from '$lib/paraglide/messages.js';
+	import { getLocale } from '$lib/paraglide/runtime';
 	import Dot from 'lucide-svelte/icons/dot';
 	import ListCollapse from 'lucide-svelte/icons/list-collapse';
+	import MoveRight from 'lucide-svelte/icons/move-right';
 </script>
 
 <svelte:head>
@@ -70,7 +68,7 @@
 		</Speaking>
 
 		<Speaking SpeakingSection title={m.work()}>
-			{#each resume.languages[languageTag()].work as work}
+			{#each resume.languages[getLocale()].work as work}
 				<Speaking
 					Appearance
 					href="#"
@@ -105,7 +103,7 @@
 		</Speaking>
 
 		<section>
-			{#each resume.languages[languageTag()].work as work}
+			{#each resume.languages[getLocale()].work as work}
 				<article>
 					<hgroup>
 						<h4>{work.name} {work.nameExplanation !== null ? `(${work.nameExplanation})` : ''}</h4>
@@ -137,7 +135,7 @@
 
 			<br />
 
-			{#each resume.languages[languageTag()].education as edu}
+			{#each resume.languages[getLocale()].education as edu}
 				<article>
 					<hgroup>
 						<div style="display: flex; flex-direction: row;">
