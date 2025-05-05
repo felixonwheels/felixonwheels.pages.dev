@@ -1,63 +1,29 @@
 <script lang="ts">
-	import BlurFade from '$lib/components/BlurFade.svelte';
-	import Container from '$lib/components/Container.svelte';
-	import SocialIcons from '$lib/components/SocialIcons.svelte';
-	import { Separator } from '$lib/components/ui/separator/index.js';
 	import { m } from '$lib/paraglide/messages.js';
-	import type { NavItem } from '$lib/types';
 	import CodeXml from 'lucide-svelte/icons/code-xml';
 	import Heart from 'lucide-svelte/icons/heart';
-
-	let { navItems }: { navItems: NavItem[] } = $props();
 </script>
 
-<footer class="mt-24 mb-24 pt-4 md:mb-6">
-	<BlurFade once={true}>
-		<div>
-			<Separator
-				class="mx-auto mb-4 h-0.5 w-3/4 rounded-full bg-zinc-900/5 md:mb-8 md:w-1/3 dark:bg-white/10"
-			/>
-		</div>
-		<div class="flex flex-col items-center justify-between gap-6">
-			<div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-				{#each navItems as navItem}
-					<a class="transition hover:text-teal-500 dark:hover:text-teal-400" href={navItem.href}
-						>{navItem.text}</a
-					>
-				{/each}
-			</div>
+<section>
+	<footer>
+		<span
+			><a
+				href="https://github.com/felixonwheels/felixonwheels.pages.dev"
+				target="_blank"
+				rel="noopener noreferrer"><CodeXml size={20} /></a
+			>
+			{m.footerWith()}
+			<Heart size={18} style="color: #D93526" />
+			{m.footerBy()}</span
+		>
 
-			<div class="flex gap-6">
-				<a class="group -m-1 p-1" aria-label="Follow on Twitter" href="https://twitter.com">
-					<SocialIcons
-						Twitter
-						class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
-					/>
-				</a>
-				<a class="group -m-1 p-1" aria-label="Follow on Instagram" href="https://instagram.com">
-					<SocialIcons
-						Instagram
-						class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
-					/>
-				</a>
-				<a class="group -m-1 p-1" aria-label="Follow on GitHub" href="https://github.com">
-					<SocialIcons
-						GitHub
-						class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
-					/>
-				</a>
-				<a class="group -m-1 p-1" aria-label="Follow on LinkedIn" href="https://linkedin.com">
-					<SocialIcons
-						LinkedIn
-						class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
-					/>
-				</a>
-			</div>
-			<div class="flex flex-row text-sm text-zinc-400 dark:text-zinc-500">
-				<CodeXml size={24} class="px-1" />
-				{m.footerWith()}
-				<Heart size={22} class="px-1" />{m.footerBy()}
-			</div>
-		</div>
-	</BlurFade>
-</footer>
+		<br />
+		<br />
+	</footer>
+</section>
+
+<style>
+	footer {
+		text-align: center;
+	}
+</style>

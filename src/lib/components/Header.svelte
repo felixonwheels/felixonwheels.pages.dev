@@ -1,10 +1,27 @@
 <script lang="ts">
-	import DesktopNavigation from '$lib/components/DesktopNavigation.svelte';
-	import MobileNavigation from '$lib/components/MobileNavigation.svelte';
-	import type { NavItem } from '$lib/types';
+	import profile from '$lib/assets/profile.webp';
 
-	let { navItems }: { navItems: NavItem[] } = $props();
+	import LanguageSelector from './LanguageSelector.svelte';
 </script>
 
-<MobileNavigation {navItems} class="md:hidden" />
-<DesktopNavigation {navItems} class="hidden md:block" />
+<nav>
+	<ul>
+		<li><img src={profile} alt="félix defrance profile" /></li>
+	</ul>
+	<ul>
+		<li><LanguageSelector /></li>
+	</ul>
+</nav>
+
+<style>
+	img {
+		border-radius: 4rem;
+		width: 10vh;
+		height: 10vh;
+		object-fit: cover;
+	}
+
+	nav {
+		align-items: flex-end;
+	}
+</style>

@@ -1,12 +1,7 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"about": "About",
-	"projects": "Projects",
-	"resume": "Resume",
-	"language": "Français",
-	"education": "Education",
-	"work": "Work experience",
-	"homeTitle": "Software engineer",
+	"language": "🇫🇷",
+	"metaDescription": "I'm Félix, a software engineer passionate about creating useful, accessible, and efficient software.",
 	"footerWith": "with",
 	"footerBy": "by felixonwheels"
 }

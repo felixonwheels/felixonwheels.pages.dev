@@ -1,12 +1,7 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"about": "À propos",
-	"projects": "Projets",
-	"resume": "CV",
-	"language": "English",
-	"education": "Formation",
-	"work": "Expériences professionnelles",
-	"homeTitle": "Ingénieur logiciel",
+	"language": "🇬🇧",
 	"footerWith": "avec",
-	"footerBy": "par felixonwheels"
+	"footerBy": "par felixonwheels",
+	"metaDescription": "Je suis Félix, un ingénieur logiciel passionné par la création de logiciels utiles, accessibles et sobres."
 }
