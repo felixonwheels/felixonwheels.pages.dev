@@ -122,6 +122,14 @@
 
 <hr />
 
+You can find me resume&nbsp;<a
+	href="/cv-felix-defrance.pdf"
+	target="_blank"
+	rel="noopener noreferrer">here</a
+>.
+
+<hr />
+
 <span>If you wish to contact me, you can reach me there:</span>
 
 <ul>

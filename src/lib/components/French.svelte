@@ -122,6 +122,14 @@
 
 <hr />
 
+Vous pouvez trouver mon CV&nbsp;<a
+	href="/cv-felix-defrance.pdf"
+	target="_blank"
+	rel="noopener noreferrer">ici</a
+>.
+
+<hr />
+
 <span>Si vous souhaitez me contacter, vous pouvez le faire ici :</span>
 
 <ul>
