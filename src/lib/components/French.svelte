@@ -14,7 +14,7 @@
 		target="_blank"
 		rel="noopener noreferrer"
 		href="https://inpn.mnhn.fr/accueil/participer/inpn-especes">INPN Espèces</a
-	>, permettant aux citoyens français de contribuer à l’inventaire national du patrimoine naturel.
+	>, permettant aux utilisateur·rice·s de contribuer à l’inventaire national du patrimoine naturel.
 </p>
 
 <hr />

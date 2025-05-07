@@ -14,7 +14,7 @@
 		target="_blank"
 		rel="noopener noreferrer"
 		href="https://inpn.mnhn.fr/accueil/participer/inpn-especes">INPN Espèces</a
-	>, which enables French citizens to contribute to the national biodiversity inventory.
+	>, which enables users to contribute to the national biodiversity inventory.
 </p>
 
 <hr />
