@@ -1,9 +1,6 @@
 <h4>hello world!</h4>
 
-<p>
-	I'm Félix, a software engineer passionate about creating useful, accessible, and efficient
-	software.
-</p>
+<p>I'm Félix, an engineer passionate about creating useful, accessible, and efficient software.</p>
 
 <hr />
 
@@ -119,6 +116,12 @@
 <p>
 	I care deeply about free/libre/open source software, social justice and sustainable mobilities.
 </p>
+
+<hr />
+
+You can find me resume&nbsp;<a href="/felix-defrance.pdf" target="_blank" rel="noopener noreferrer"
+	>here</a
+>.
 
 <hr />
 

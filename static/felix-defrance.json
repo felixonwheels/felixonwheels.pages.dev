@@ -1,0 +1,479 @@
+{
+  "basics": {
+    "name": "Félix Defrance",
+    "headline": "Ingénieur passionné par la création de logiciels utiles, accessibles et sobres.",
+    "email": "felixgif@gmail.com",
+    "phone": "+33 6 70 26 04 14",
+    "location": "Paris",
+    "url": {
+      "label": "Site perso",
+      "href": "https://felixonwheels.pages.dev"
+    },
+    "customFields": [
+      {
+        "id": "pmd7u9u18yj8mvked680pu5w",
+        "icon": "github-logo",
+        "name": "GitHub",
+        "value": "https://github.com/felixonwheels/"
+      }
+    ],
+    "picture": {
+      "url": "https://avatars.githubusercontent.com/u/8938540?v=4",
+      "size": 64,
+      "aspectRatio": 1,
+      "borderRadius": 9999,
+      "effects": {
+        "hidden": false,
+        "border": false,
+        "grayscale": false
+      }
+    }
+  },
+  "sections": {
+    "summary": {
+      "name": "Summary",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "summary",
+      "content": "<p>Je suis Félix, un ingénieur logiciel passionné par la création de logiciels utiles, accessibles et sobres.</p>"
+    },
+    "awards": {
+      "name": "Awards",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "awards",
+      "items": []
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "certifications",
+      "items": []
+    },
+    "education": {
+      "name": "Formation",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "education",
+      "items": [
+        {
+          "id": "t85wof7gjcf2tvt6fz5em6ev",
+          "visible": true,
+          "institution": "Chalmers University of Technology (Göteborg, Suède)",
+          "studyType": "Semestre d’échange académique",
+          "area": "",
+          "score": "",
+          "date": "Août 2020 - Janvier 2021",
+          "summary": "<ul><li><p style=\"text-align: justify\"><u>Réseaux de neurones artificiels</u> :<strong> </strong>Réseau de neurones récurrents, Apprentissage supervisé/non supervisé/par renforcement, Machine Learning, Deep Learning, Python / Tensorflow / Keras.</p></li><li><p style=\"text-align: justify\"><u>Architecture des ordinateurs</u> :<strong> </strong>Architecture d’un processeur, MIPS assembleur, algorithme de Tomasulo, techniques d’optimisation, hiérarchie de mémoire, parallélisme et multiprocesseurs.</p></li><li><p style=\"text-align: justify\"><u>Programmation fonctionnelle en Haskell</u> :<strong> </strong>Structure de données, récursion, polymorphisme, tests, évaluation paresseuse, monades.</p></li><li><p style=\"text-align: justify\"><u>Cryptographie</u> :<strong> </strong>Cryptographie symétrique, chiffrement de flux/par bloc, cryptographie asymétrique (RSA, ElGamal), infrastructure à clés publiques, théorie des nombres/des groupes, attaques et vulnérabilités des protocoles.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "sf1ygcto41rdtbqh84wnm852",
+          "visible": true,
+          "institution": "ISEP (Institut Supérieur d’Electronique de Paris)",
+          "studyType": "Ecole d'ingénieur",
+          "area": "",
+          "score": "",
+          "date": "2016 - 2021",
+          "summary": "<p style=\"text-align: justify\"><strong>Cycle préparatoire associé MPSI puis PSI (2016 - 2018)</strong></p><ul><li><p style=\"text-align: justify\">Programme simulant le fonctionnement de la machine Enigma (en Python).</p></li><li><p style=\"text-align: justify\">Machine résolvant le Rubik’s cube (en Python pour l’interface et la reconnaissance d’image, et en Arduino pour le contrôle des moteurs).</p></li></ul><p style=\"text-align: justify\"><strong>Cycle ingénieur avec spécialisation Ingénieur Logiciel (2018 - 2021)</strong></p><ul><li><p style=\"text-align: justify\"><u>Projet d’algorithmique</u> : Exploitation des données GTFS du réseau de transport de Rome</p></li><li><p style=\"text-align: justify\"><u>Projet cybersécurité</u> : attaques d’application web (XSS, CSRF, injection SQL, DoS/DDoS, flooding)</p></li><li><p style=\"text-align: justify\"><u>Projet Web</u> : plateforme web, auth, chat (Architecture MVC, NodeJS, ReactJS, Redux, WebSockets, SQLite), méthodologie Agile, diagramme de Gantt/Pert, réalisations de tests unitaires</p></li><li><p style=\"text-align: justify\"><u>Projet d’intelligence artificielle</u> : analyse des premières données sur le COVID-19, nettoyage, classification et estimation</p></li><li><p style=\"text-align: justify\"><u>Participation à un projet de Tech for Good</u> : personas, user story et maquettes pour le projet Chronic Buddy (association pour la mobilité des personnes atteintes de maladies chroniques).</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "name": "Expériences professionnelles",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "experience",
+      "items": [
+        {
+          "id": "dzdzfanbv8ilkmc9jgmyipr6",
+          "visible": true,
+          "company": "Muséum national d'Histoire naturelle (PatriNat)",
+          "position": "Centre d’expertise et de données sur la nature",
+          "location": "Développeur mobile",
+          "date": "2022 - 2025 (3 ans)",
+          "summary": "<p style=\"text-align: justify\">Refonte de l'application mobile de <em>sciences participatives</em> <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://inpn.mnhn.fr/accueil/participer/inpn-especes\">INPN Espèces</a>, permettant aux utilisateur·rice·s de contribuer à l’inventaire national du patrimoine naturel.</p><p style=\"text-align: justify\">Mise en place d'une chaîne de CI/CD  afin de déployer l'application sur l'Apple Store et le Google Play Store.</p><p style=\"text-align: justify\">Travail sur des questions d'UI/UX et d'accessibilité de l'application.</p><p style=\"text-align: justify\"><em><u>stack</u> : flutter, riverpod, isar, freezed, dio, matomo, sentry, gitlab ci, fastlane, apple app store connect, google play console</em></p>",
+          "url": {
+            "label": "",
+            "href": "https://www.mnhn.fr"
+          }
+        },
+        {
+          "id": "zpcftvt7vpxmlabg6261tmr0",
+          "visible": true,
+          "company": "IRT SystemX",
+          "position": "Accélérateur de la transformation numérique des territoires",
+          "location": "Stage data science et web full-stack",
+          "date": "2021 (6 mois)",
+          "summary": "<p style=\"text-align: justify\">Analyse, intégration et exploitation des données dans le cadre d’une application interactive pour la planification énergétique territoriale.</p><p style=\"text-align: justify\"><em><u>stack</u> : react, redux, redux saga, mapbox gl, azure fonctions (nodejs), cosmos db, data explorer, digital twins, static web app, postgresql, python, github actions ci/cd</em></p>",
+          "url": {
+            "label": "",
+            "href": "https://www.irt-systemx.fr"
+          }
+        },
+        {
+          "id": "esvteh9oat845dxk22665y4b",
+          "visible": true,
+          "company": "Hello Watt",
+          "position": "Conseiller énergie du particulier",
+          "location": "Stage R&D développeur full-stack",
+          "date": "2019 (6 mois)",
+          "summary": "<p style=\"text-align: justify\">Participation à la conception et au développement de la plateforme de diagnostic énergétique, optimisations SEO (structured data).</p><p style=\"text-align: justify\"><em><u>stack</u> : django, react, aws elastic beanstalk, aws lambda, aws s3, aws cloudwatch, mysql, mongodb</em></p>",
+          "url": {
+            "label": "",
+            "href": "https://www.hellowatt.fr"
+          }
+        },
+        {
+          "id": "uvai85s5aeglf9qs7yf1909g",
+          "visible": true,
+          "company": "Partoo",
+          "position": "Amélioration de la visibilité sur internet",
+          "location": "Stage R&D",
+          "date": "2017 (1 mois)",
+          "summary": "<p style=\"text-align: justify\">Réalisation d’une interface web interne pour faciliter la récupération de fichiers clients par les \"customer success\" dans la base de données.</p><p style=\"text-align: justify\"><em><u>stack</u> : pyramid (python), javascript, mongodb, redis</em></p>",
+          "url": {
+            "label": "",
+            "href": "https://www.partoo.co/fr/"
+          }
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Bénévolat",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "volunteer",
+      "items": [
+        {
+          "id": "sh6uyfnlq7gkrzn0akw2qmsk",
+          "visible": true,
+          "organization": "CycloCube",
+          "position": "Coach",
+          "location": "",
+          "date": "depuis 2024",
+          "summary": "<p style=\"text-align: justify\">Co-responsable de l'atelier d'auto-réparation vélo CycloCube à Césure dans le 5ème arrondissement de Paris.</p>",
+          "url": {
+            "label": "",
+            "href": "https://cyclocube.org"
+          }
+        },
+        {
+          "id": "uw4p9go3w9c3fl4j9arscdwx",
+          "visible": true,
+          "organization": "Association sportive du Muséum",
+          "position": "Co-responsable de la section course à pied",
+          "location": "",
+          "date": "depuis 2023",
+          "summary": "<p style=\"text-align: justify\">Organisation de sorties de groupes plusieurs midis par semaine.</p><p style=\"text-align: justify\">Organisation du cross du Muséum, évènement rassemblant plus d'une centaine de personnes dans le Jardin des Plantes.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "interests": {
+      "name": "Centres d'intérêt",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "interests",
+      "items": [
+        {
+          "id": "qtwwf7hrg6gk98c4k26q9q9u",
+          "visible": true,
+          "name": "Course à pied",
+          "keywords": []
+        },
+        {
+          "id": "grk6e5hn28tyia4z2v8pfnmi",
+          "visible": true,
+          "name": "Cyclisme",
+          "keywords": []
+        },
+        {
+          "id": "hxhl25yc93wvqsgyka2d86xk",
+          "visible": true,
+          "name": "Montagne",
+          "keywords": []
+        },
+        {
+          "id": "zss14jfhyf3vhwdj8pzin6ue",
+          "visible": true,
+          "name": "Plongée",
+          "keywords": []
+        },
+        {
+          "id": "tft4koip1436negat6ichzm8",
+          "visible": true,
+          "name": "Guitare",
+          "keywords": []
+        },
+        {
+          "id": "jymx5ykrm76sx0oo913iafiq",
+          "visible": true,
+          "name": "Logiciel libre",
+          "keywords": []
+        },
+        {
+          "id": "kdwmd4791qhh0va7eeizoguk",
+          "visible": true,
+          "name": "Mobilités durables",
+          "keywords": []
+        }
+      ]
+    },
+    "languages": {
+      "name": "Langues",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "languages",
+      "items": [
+        {
+          "id": "v8wr1rr7b78djaoge3t4o1qr",
+          "visible": true,
+          "name": "Anglais",
+          "description": "(TOEIC : 965/990, CAE)",
+          "level": 5
+        },
+        {
+          "id": "o92e0hwbjk2eck2ujg6ywxau",
+          "visible": true,
+          "name": "Espagnol",
+          "description": "",
+          "level": 3
+        }
+      ]
+    },
+    "profiles": {
+      "name": "Profils",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "profiles",
+      "items": [
+        {
+          "id": "rdw1k0ilzeyvcxepm9v8u9ob",
+          "visible": true,
+          "network": "GitHub",
+          "username": "felixonwheels",
+          "icon": "github",
+          "url": {
+            "label": "",
+            "href": "https://github.com/felixonwheels"
+          }
+        }
+      ]
+    },
+    "projects": {
+      "name": "Projects",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "projects",
+      "items": []
+    },
+    "publications": {
+      "name": "Publications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "publications",
+      "items": []
+    },
+    "references": {
+      "name": "References",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "references",
+      "items": []
+    },
+    "skills": {
+      "name": "Compétences",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "yskr2hvlfsh0bitflaw539gg",
+          "visible": true,
+          "name": "Frontend web",
+          "description": "",
+          "level": 5,
+          "keywords": [
+            "typescript",
+            "javascript",
+            "sveltekit",
+            "react",
+            "tailwind",
+            "shadcn"
+          ]
+        },
+        {
+          "id": "qzassoo1lkg8cgbw3nckuxkz",
+          "visible": true,
+          "name": "Frontend mobile",
+          "description": "",
+          "level": 5,
+          "keywords": [
+            "flutter",
+            "riverpod",
+            "isar",
+            "freezed",
+            "dio"
+          ]
+        },
+        {
+          "id": "tkdecdf3k3v7lh1yu3u1aicv",
+          "visible": true,
+          "name": "Backend",
+          "description": "",
+          "level": 4,
+          "keywords": [
+            "supabase",
+            "directus",
+            "axum",
+            "hono",
+            "elysia",
+            "django",
+            "flask"
+          ]
+        },
+        {
+          "id": "ymx25zad0t1jeywfml44r6d8",
+          "visible": true,
+          "name": "Base de données",
+          "description": "",
+          "level": 3,
+          "keywords": [
+            "sqlite",
+            "postgres",
+            "mariadb"
+          ]
+        },
+        {
+          "id": "r2vxm3vnknyxfoev1bggvm2i",
+          "visible": true,
+          "name": "GNU/Linux",
+          "description": "",
+          "level": 4,
+          "keywords": [
+            "arch",
+            "debian",
+            "bash",
+            "vim",
+            "latex"
+          ]
+        },
+        {
+          "id": "x375lbm7hpndqdttrrstwdkk",
+          "visible": true,
+          "name": "DevOps",
+          "description": "",
+          "level": 3,
+          "keywords": [
+            "docker",
+            "gitlab ci",
+            "github actions",
+            "portainer"
+          ]
+        },
+        {
+          "id": "jd9eyot5f5sc48v2fmkjlzo6",
+          "visible": true,
+          "name": "Misc",
+          "description": "",
+          "level": 3,
+          "keywords": [
+            "c",
+            "c++",
+            "rust",
+            "java",
+            "haskell",
+            "assembleur x86",
+            "assembleur arm",
+            "matlab",
+            "r",
+            "arduino",
+            "php",
+            "deno"
+          ]
+        }
+      ]
+    },
+    "custom": {}
+  },
+  "metadata": {
+    "template": "chikorita",
+    "layout": [
+      [
+        [
+          "profiles",
+          "summary",
+          "experience",
+          "education"
+        ],
+        [
+          "skills",
+          "languages",
+          "interests",
+          "volunteer",
+          "awards",
+          "certifications",
+          "projects",
+          "references",
+          "publications"
+        ]
+      ]
+    ],
+    "css": {
+      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "margin": 10,
+      "format": "a4",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#27ae60"
+    },
+    "typography": {
+      "font": {
+        "family": "Nunito",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ],
+        "size": 12
+      },
+      "lineHeight": 1,
+      "hideIcons": false,
+      "underlineLinks": true
+    },
+    "notes": ""
+  }
+}

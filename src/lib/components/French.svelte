@@ -1,8 +1,7 @@
 <h4>hello world!</h4>
 
 <p>
-	Je suis Félix, un ingénieur logiciel passionné par la création de logiciels utiles, accessibles et
-	sobres.
+	Je suis Félix, un ingénieur passionné par la création de logiciels utiles, accessibles et sobres.
 </p>
 
 <hr />
@@ -119,6 +118,14 @@
 	Je suis profondément attaché aux logiciels libres et open source, à la justice sociale et aux
 	différentes mobilités durables.
 </p>
+
+<hr />
+
+Vous pouvez trouver mon CV&nbsp;<a
+	href="/felix-defrance.pdf"
+	target="_blank"
+	rel="noopener noreferrer">ici</a
+>.
 
 <hr />
 
