@@ -15,7 +15,7 @@
 
 <style>
 	img {
-		border-radius: 4rem;
+		border-radius: 50%;
 		width: 10vh;
 		height: 10vh;
 		object-fit: cover;
