@@ -7,8 +7,16 @@
 <hr />
 
 <p>
-	Je travaille actuellement au <b>Muséum national d’Histoire naturelle</b> (MNHN), où je suis en
-	charge de la refonte de l'application mobile de <i>science participative</i>
+	Je cherche un emploi d'ingénieur logiciel dans les domaines des mobilités, du sport et de
+	l'environnement, ou tout projet ayant une mission de service public.
+</p>
+
+<hr />
+
+<p>
+	Pendant les 3 dernières années, j'ai travaillé au <b>Muséum national d’Histoire naturelle</b>
+	(MNHN), où j'étais en charge de la refonte de l'application mobile de
+	<i>sciences participatives</i>
 	<a
 		target="_blank"
 		rel="noopener noreferrer"

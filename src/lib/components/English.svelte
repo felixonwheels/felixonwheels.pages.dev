@@ -5,8 +5,15 @@
 <hr />
 
 <p>
-	I am currently working at the <b>National Museum of Natural History</b> (MNHN), where I am
-	responsible for redesigning the <i>citizen science</i> mobile application
+	I am looking for a software engineering position in the fields of mobility, sports, and the
+	environment, or in any project with a public service mission.
+</p>
+
+<hr />
+
+<p>
+	Over the past three years, I have worked at the <b>National Museum of Natural History</b> (MNHN),
+	where I was responsible for redesigning the <i>citizen science</i> mobile application
 	<a
 		target="_blank"
 		rel="noopener noreferrer"
